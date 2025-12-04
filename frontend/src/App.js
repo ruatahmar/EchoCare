@@ -1,17 +1,16 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import VoiceAssistant from "./pages/VoiceAssistant";
-import "./index.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import VoiceAssistant from "./VoiceAssistant";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/assistant" element={<VoiceAssistant />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
