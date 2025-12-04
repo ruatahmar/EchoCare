@@ -1,0 +1,18 @@
+{
+  "medicines": [
+    {
+      "id": 1,
+      "name": "Paracetamol",
+      "dose": "1 tablet",
+      "times": ["09:00", "21:00"],
+      "notes": "After food"
+    },
+    {
+      "id": 2,
+      "name": "Vitamin D",
+      "dose": "1 capsule",
+      "times": ["10:00"],
+      "notes": "Morning only"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "emergency_contacts": [
+    {
+      "name": "Bruh",
+      "relation": "Daughter",
+      "phone": "+91 91234 56789"
+    },
+    {
+      "name": "Dr. BRuh",
+      "relation": "Doctor",
+      "phone": "+91 99887 66554"
+    }
+  ]
+}

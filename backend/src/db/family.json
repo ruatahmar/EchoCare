@@ -1,0 +1,18 @@
+{
+  "family": [
+    {
+      "id": 1,
+      "name": "Dela",
+      "relation": "Daughter",
+      "phone": "+91 98765 43210",
+      "notes": "Lives in Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Hitler",
+      "relation": "Son",
+      "phone": "+91 91234 56789",
+      "notes": "Works in Bangalore"
+    }
+  ]
+}
