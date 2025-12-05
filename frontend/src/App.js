@@ -1,16 +1,25 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import VoiceAssistant from "./VoiceAssistant";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomeScreen from './pages/HomeScreen';
+import SetupScreen from './pages/SetupScreen';
+import ReminderScreen from './pages/ReminderScreen';
+import FamilyScreen from './pages/FamilyScreen';
+import { Toaster } from './components/toaster';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/assistant" element={<VoiceAssistant />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/setup" element={<SetupScreen />} />
+          <Route path="/reminder" element={<ReminderScreen />} />
+          <Route path="/family" element={<FamilyScreen />} />
+        </Routes>
+      </BrowserRouter>
+      <Toaster />
+    </div>
   );
 }
 
