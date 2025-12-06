@@ -2,17 +2,18 @@
   "medicines": [
     {
       "id": 1,
-      "name": "Paracetamol",
-      "dose": "1 tablet",
-      "times": ["09:00", "21:00"],
-      "notes": "After food"
+      "name": "Dolo",
+      "times": "2:30"
     },
     {
       "id": 2,
       "name": "Vitamin D",
-      "dose": "1 capsule",
-      "times": ["10:00"],
-      "notes": "Morning only"
+      "times": "10:00"
+    },
+    {
+      "id": 1764998200346,
+      "name": "vitamin c",
+      "dose": "1 tab"
     }
   ]
 }

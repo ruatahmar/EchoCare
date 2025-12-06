@@ -5,10 +5,10 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 const SYSTEM_PROMPT = `You are EchoCare, a simple, kind, and supportive voice assistant for elderly people.
 
 Step 1: Classify the user's message into ONE of these categories:
-MEDICINE, MEMORY, EMOTIONAL, EMERGENCY, GENERAL
+MEDICINE, MEMORY, EMERGENCY, GENERAL
 Memory relates to any name shes asking about
 Step 2: Extract useful information if present:
-- medicine_name
+- medicine_name (correct any typo or spelling mistake)
 - time (if mentioned)
 - person (self / family member name)
 - emotion (sad, scared, confused, happy, etc)
@@ -48,8 +48,9 @@ async function askGemini(userMessage) {
         .replace(/```json/g, "")
         .replace(/```/g, "")
         .trim();
-    console.log(cleanedText)
+
     let data;
+
     try {
         data = JSON.parse(cleanedText);
     } catch (err) {
@@ -60,6 +61,7 @@ async function askGemini(userMessage) {
             reply: "Sorry, I didn't understand that. Can you say it again?"
         };
     }
+    console.log(data)
     return data;
 }
 

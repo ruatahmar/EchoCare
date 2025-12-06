@@ -5,14 +5,19 @@
       "name": "Dela",
       "relation": "Daughter",
       "phone": "+91 98765 43210",
-      "notes": "Lives in Delhi"
+      "notes": "She lives in Delhi"
     },
     {
       "id": 2,
-      "name": "Hitler",
+      "name": "Lawma",
       "relation": "Son",
       "phone": "+91 91234 56789",
-      "notes": "Works in Bangalore"
+      "notes": "He works in Bangalore"
+    },
+    {
+      "id": 1764999537023,
+      "name": "bruh",
+      "phone": "12345"
     }
   ]
 }
