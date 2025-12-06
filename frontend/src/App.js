@@ -5,6 +5,8 @@ import SetupScreen from './pages/SetupScreen';
 import ReminderScreen from './pages/ReminderScreen';
 import FamilyScreen from './pages/FamilyScreen';
 import { Toaster } from './components/toaster';
+import TalkScreen from "./pages/TalkScreen";
+
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
           <Route path="/setup" element={<SetupScreen />} />
           <Route path="/reminder" element={<ReminderScreen />} />
           <Route path="/family" element={<FamilyScreen />} />
+          <Route path="/talk" element={<TalkScreen />} /> 
+
         </Routes>
       </BrowserRouter>
       <Toaster />

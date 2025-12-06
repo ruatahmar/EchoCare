@@ -33,11 +33,9 @@ const HomeScreen = () => {
   }, [navigate]);
 
   const handleTalk = () => {
-    const utterance = new SpeechSynthesisUtterance('How can I help you today?');
-    utterance.rate = 0.8;
-    utterance.pitch = 1;
-    window.speechSynthesis.speak(utterance);
+    navigate('/talk');
   };
+
 
   const handleEmergency = () => {
     const family = JSON.parse(localStorage.getItem('family') || '[]');
